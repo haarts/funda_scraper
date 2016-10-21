@@ -99,7 +99,7 @@ def fetch_search_result_page(req):
 
 		return soup.find('a', class_='pagination-next').get('href'), houses
 
-next_page_link = '/koop/heel-nederland/p1083/'
+next_page_link = open('last','r').read()
 retries = 0
 
 while True:
